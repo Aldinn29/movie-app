@@ -183,7 +183,8 @@ function App() {
         <h1>Movies<span className='text-primary'>Online</span></h1>
       </div>
       <Navbar genres={genres} setGenre={setGenre} searchValue={searchValue} setSearchValue={setSearchValue} title={title} setTitle={setTitle} active={active} />
-      <Sidebar navElements={navElements} active={active} setActive={setActive} setModal={setModal} />
+      <Sidebar navElements={navElements} active={active} setActive={setActive} setModal={setModal} setSearchValue={setSearchValue}
+        setGenre={setGenre} setTitle={setTitle} />
       {!modal ? (<Main movies={movies} series={series} topMovies={topMovies} topSeries={topSeries} trendingMovies={trendingMovies} trendingSeries={trendingSeries}
         upcomingMovies={upcomingMovies} upcomingSeries={upcomingSeries} loading={loading} active={active} renderMovies={renderMovies} handlePage={handlePage} />)
         : (<Modal modal={modal} setModal={setModal} genres={genres} />)}
