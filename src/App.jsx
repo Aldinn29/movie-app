@@ -131,7 +131,7 @@ function App() {
           const moviesData = await moviesResponse.json()
           setMovies(moviesData.results)
 
-        } else if (active === "Series") {
+        } else if (active === "TV Series") {
           url = handleTvUrl(searchValue, genre, currentPage)
           const seriesResponse = await fetch(url);
           const seriesData = await seriesResponse.json()
