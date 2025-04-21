@@ -180,7 +180,7 @@ function App() {
   return (
     <>
       <div className='container-fluid text-white py-3 px-5 position-fixed z-3' style={{ background: '#282c39' }}>
-        <h1>Movies<span className='text-primary'>Online</span></h1>
+        <h1>Movies<span className='text-primary'>TMDB</span></h1>
       </div>
       <Navbar genres={genres} setGenre={setGenre} searchValue={searchValue} setSearchValue={setSearchValue} title={title} setTitle={setTitle} active={active} />
       <Sidebar navElements={navElements} active={active} setActive={setActive} setModal={setModal} setSearchValue={setSearchValue}
